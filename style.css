@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "BeerMoney";
+  src: url("./fonts/beer-money.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-image: url(./img/bg-tree.jpg);
@@ -31,17 +37,18 @@ li {
 .container {
   margin: 0 auto;
   width: 1200px;
+  padding: 0px 15px;
 }
 .header-content {
   height: 100vh;
   width: 100%;
   background-image: url(./img/header.jpg);
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
   background-repeat: no-repeat;
   padding: 46px 0;
 }
-.navigate-to-menu {
+.header-section .navigate-to-menu {
   padding: 20px 59px 16px;
   color: #fff;
   font-size: 1.125em;
@@ -128,6 +135,9 @@ h3 {
 section {
   padding: 55px 0 66px;
 }
+.privilege-card-container {
+  padding: 24px 0px;
+}
 .privilege-card-container .card {
   display: inline-block;
   max-width: calc(100% / 3 - 149px);
@@ -137,31 +147,147 @@ section {
 .privilege-card-container .card .flex-side {
   gap: 20px;
 }
-.about-us-inner h2{
-        font-size: 36px;
-    font-weight: 900;
-    line-height: 42px;
-    margin-top: 0;
+.about-us-inner h2 {
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 42px;
+  margin-top: 0;
 }
-.about-us-inner .content-side a{
-    color:#fff;
-    text-decoration: underline;
-    text-underline-offset: 3px;
+.about-us-inner .content-side a {
+  color: #fff;
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
-.about-us-inner{
-    display: flex;
+.about-us-inner {
+  display: flex;
 }
-/* исправить блок */
-.address{
-background-color: #46b329;
-    width: 53%;
-    height: 80px;
-    border-radius: 15px;
-    font-size: 12px;
-    text-align: center;
-    text-transform: uppercase;
+.address {
+  width: 53%;
+}
+.address {
+  background-image: url(./img/place.jpg);
+  width: 620px;
+  border-radius: 15px;
+  position: relative;
+  background-position: bottom;
+}
+.address .content-side {
+  background-color: #46b329;
+  border-radius: 0 0 15px 15px;
+  font-size: 12px;
+  text-align: center;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-bottom: 10px;
+}
+.address .content-side p {
+  margin: 0;
+  padding: 10px;
+}
+.address a {
+  font-family: "Roboto Condensed", sans-serif;
+}
+.address .content-side {
+  color: #fff;
+}
+.about-us-inner .content-side {
+  padding-right: 44px;
+}
+.preorder {
+  background-color: #faa533;
+}
+.preorder-inner .navigate-to-menu {
+  margin-left: 10px;
+  padding: 8px 35px 7px;
+  display: inline-block;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 900;
+  text-transform: uppercase;
+  background-color: #88b047;
+  vertical-align: middle;
+  border-radius: 40px;
+  transition: 0.3s ease;
+}
+.preorder-inner h2 {
+  font-size: 36px;
+}
+.preorder-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-content {
+  background-color: #000;
+  text-align: center;
+  padding: 14px 0px;
+}
+.footer-content p {
+  margin: 0;
+}
+.owl-carousel {
+  position: relative;
 }
 
-.address a{
-    color: #fff;
+.owl-carousel .item img {
+  width: 380px;
+  height: 275px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.owl-carousel .owl-nav {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  z-index: 10;
+}
+
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-next {
+  position: absolute;
+  width: 25px;
+  height: 38px;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  pointer-events: all;
+  text-indent: -9999px;
+}
+
+.owl-carousel .owl-nav button.owl-prev {
+  left: -65px;
+  background: url("./img/slide-prev.png") no-repeat center / contain;
+}
+
+.owl-carousel .owl-nav button.owl-next {
+  right: -53px;
+  background: url("./img/slide-next.png") no-repeat center / contain;
+}
+.header-content h1 {
+  font-family: "BeerMoney";
+}
+h2 {
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 35px;
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 42px;
+}
+.about-us-inner {
+  margin-top: 30px;
+}
+.about-us-inner .content-side p {
+  font-family: "Roboto Condensed", sans-serif;
+}
+.add-btn {
+  display: none;
 }
