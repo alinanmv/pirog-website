@@ -41,116 +41,79 @@
       </div>
     </header>
     <main>
+      <div class="modal-window" id="modal-window">
+        <div class="modal-content">
+<div class="left-row">
+  <h3>Оформление заказа</h3>
+  <div class="tabs">
+    <button type="button">Доставка</button>
+    <button type="button">Забрать в пекарне</button>
+  </div>
+  <div class="content-side">
+    <h4>Адрес</h4>
+    <div class="flex-side">
+      <input type="text" placeholder="Имя">
+      <input type="text"  placeholder="Фамилия">
+    </div>
+    <select name="district" id="district">
+      <option value=""></option>
+      <option value=""></option>
+      <option value=""></option>
+      <option value=""></option>
+      <option value=""></option>
+    </select>
+    <input type="text">
+    <div class="flex-side">
+      <input type="text" placeholder="Дом"><input type="text"><input type="text">
+    </div>
+    <div class="flex-side">
+      <input type="text"><input type="text"><input type="text">
+    </div>
+    <textarea name="" id=""></textarea>
+  </div>
+</div>
+        </div>
+      </div>
       <section class="menu-section" id="menu-section">
+        <img src="./img/arrow-curve.png" alt="arrow" class="arrow" />
+        <img src="./img/pie-background" alt="pie" class="pie-background" />
+        <img src="./img/food.png" alt="food" class="food-image" />
         <div class="container">
           <h2>Выберите пироги</h2>
-          <div class="menu">
-            <div class="left-row">
-              <h3>Сытные пироги 1кг</h3>
-              <div class="menu-list" id="savory-pies">
-                <ul></ul>
+          <div class="menu-section-inner">
+            <div class="menu">
+              <div class="left-row">
+                <h3>Сытные пироги 1кг</h3>
+                <div class="menu-list" id="savory-pies">
+                  <ul></ul>
+                </div>
+                <h3>Круассан-сэндвичи</h3>
+                <div class="menu-list" id="croissants">
+                  <ul></ul>
+                </div>
+                <h3>Пирожки и Караваи</h3>
+                <div class="menu-list" id="pastry">
+                  <ul></ul>
+                </div>
+                <h3>Блины</h3>
+                <div class="menu-list" id="pancakes">
+                  <ul></ul>
+                </div>
               </div>
-              <h3>Круассан-сэндвичи</h3>
-              <div class="menu-list">
-                <ul></ul>
-              </div>
-              <h3>Пирожки и Караваи</h3>
-              <ul>
-                <li>
-                  <span class="title">Набор пирожков 30 шт.</span>
-                  <span class="price"></span>
-                </li>
-                <li>
-                  <span class="title">Набор пирожков 30 шт.</span>
-                  <span class="price"></span>
-                </li>
-              </ul>
-            </div>
-            <div class="right-row">
-              <h3>Ассорти пирогов</h3>
-              <div class="menu-list" id="assorted">
-                <ul></ul>
-              </div>
-              <h3>Сладкие пироги 1 кг</h3>
-              <div class="menu-list" id="sweet-pies">
-                <ul></ul>
-              </div>
-              <h3>Праздничное меню</h3>
-              <ul>
-                <li>
-                  <span class="title">Комбо Лайт</span>
-                  <span class="price"></span>
-                </li>
-                <li>
-                  <span class="title">Комбо Лайт</span>
-                  <span class="price"></span>
-                </li>
-                <li>
-                  <span class="title">Комбо Лайт</span>
-                  <span class="price"></span>
-                </li>
-                <li>
-                  <span class="title">Комбо Лайт</span>
-                  <span class="price"></span>
-                </li>
-                <li>
-                  <span class="title">Комбо Лайт</span>
-                  <span class="price"></span>
-                </li>
-                <li>
-                  <span class="title">Комбо Лайт</span>
-                  <span class="price"></span>
-                </li>
-                <li>
-                  <span class="title">Комбо Лайт</span>
-                  <span class="price"></span>
-                </li>
-                <li>
-                  <span class="title">Комбо Лайт</span>
-                  <span class="price"></span>
-                </li>
-                <li>
-                  <span class="title">Комбо Лайт</span>
-                  <span class="price"></span>
-                </li>
-                <li>
-                  <span class="title">Комбо Лайт</span>
-                  <span class="price"></span>
-                </li>
-                <li>
-                  <span class="title">Комбо Лайт</span>
-                  <span class="price"></span>
-                </li>
-                <li>
-                  <span class="title">Комбо Лайт</span>
-                  <span class="price"></span>
-                </li>
-                <li>
-                  <span class="title">Комбо Лайт</span>
-                  <span class="price"></span>
-                </li>
-                <li>
-                  <span class="title">Комбо Лайт</span>
-                  <span class="price"></span>
-                </li>
-                <li>
-                  <span class="title">Комбо Лайт</span>
-                  <span class="price"></span>
-                </li>
-                <li>
-                  <span class="title">Комбо Лайт</span>
-                  <span class="price"></span>
-                </li>
-                <li>
-                  <span class="title">Комбо Лайт</span>
-                  <span class="price"></span>
-                </li>
-                <li>
-                  <span class="title">Комбо Лайт</span>
-                  <span class="price"></span>
-                </li>
-              </ul>
-              <h3>Морсы из ягод 1 л</h3>
+              <div class="right-row">
+                <h3>Ассорти пирогов</h3>
+                <div class="menu-list" id="assorted">
+                  <ul></ul>
+                </div>
+                <h3>Сладкие пироги 1 кг</h3>
+                <div class="menu-list" id="sweet-pies">
+                  <ul></ul>
+                </div>
+                <h3>Праздничное меню</h3>
+                <div class="menu-list" id="festive-menu">
+                  <ul></ul>
+                </div>
+                <!-- <h3>Морсы из ягод 1 л</h3>
               <div class="menu-list" id="drinks">
                 <ul></ul>
               </div>
@@ -161,7 +124,37 @@
               <h3>Римская Пицца</h3>
               <div class="menu-list" id="pizza">
                 <ul></ul>
+              </div> -->
               </div>
+            </div>
+            <div class="content-side">
+              <div class="basket">
+                <img src="./img/berries.png" alt="berries" class="berries" />
+                <h4>Ваша корзина</h4>
+                <div class="basket-row">
+                  <span>Сумма заказа:</span>
+                  <span class="basket-total">0 р.</span>
+                </div>
+
+                <div class="basket-row">
+                  <span
+                    ><span>Общий вес:</span>
+                    <span class="basket-weight">0 кг</span></span
+                  >
+                  <span class="basket-count">Всего: 0 шт.</span>
+                </div>
+
+                <button type="button"  class="open-modal" id="open-modal" >Оформить заказ</button>
+                <ul class="cart-items"></ul>
+              </div>
+              <ul>
+                <li> <img src="./img/car.png" alt="car">Бесплатная доставка заказов от 6000р</li>
+                <li><img src="./img/clock.png" alt="clock">Время доставки выбираете при оформлении заказа</li>
+                <li><img src="./img/wallet.png" alt="wallet">
+                  Оплатить заказ можно наличными или банковской <br> картой при
+                  получении
+                </li>
+              </ul>
             </div>
           </div>
         </div>

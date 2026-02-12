@@ -44,7 +44,7 @@ li {
   width: 100%;
   background-image: url(./img/header.jpg);
   background-size: cover;
-  background-position: bottom;
+  background-position: center;
   background-repeat: no-repeat;
   padding: 46px 0;
 }
@@ -290,4 +290,187 @@ h2 {
 }
 .add-btn {
   display: none;
+}
+.product-name {
+  font-family: "Roboto Condensed", sans-serif;
+}
+.menu-section-inner {
+  display: flex;
+}
+.basket {
+  padding: 35px 35px 10px;
+  background-color: rgba(116, 148, 65, 0.9);
+  border-radius: 0 10px 10px 0;
+  margin-top: 30px;
+  max-height: 560px;
+  overflow-y: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.cart-item {
+  overflow: visible;
+  padding-right: 10px;
+}
+.cart-items {
+  overflow-y: auto;
+
+  flex: 1;
+  min-height: 0;
+}
+.basket h4 {
+  font-size: 30px;
+  margin: 0;
+  margin-bottom: 15px;
+}
+.open-modal {
+  color: #fff;
+  display: inline-block;
+  background: #faa533;
+  border: 0;
+  border-radius: 30px;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  padding: 10px 15px;
+  font-size: 16px;
+  line-height: 1;
+  width: 100%;
+  text-align: center;
+  font-family: "Roboto Condensed", sans-serif;
+  margin-top: 20px;
+}
+.menu-section-inner .content-side ul li {
+  font-size: 16px;
+  font-family: "Roboto Condensed", sans-serif;
+  margin-bottom: 18px;
+}
+.menu-section-inner .content-side ul {
+  padding: 31px 0 0 20px;
+}
+.basket-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.menu-item:hover {
+  background-color: #62b323;
+  border-radius: 20px;
+}
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cart-item .flex-side {
+  gap: 15px;
+}
+.cart-controls {
+  display: flex;
+  gap: 10px;
+}
+.cart-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-weight: 700;
+}
+.cart-items::-webkit-scrollbar {
+  width: 6px;
+}
+.cart-items::-webkit-scrollbar-track {
+  background: transparent;
+}
+.cart-items::-webkit-scrollbar-thumb {
+  background-color: #faa533;
+  border-radius: 10px;
+}
+.product-price {
+  font-size: 16px;
+  font-family: "Roboto Condensed", sans-serif;
+}
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+}
+.menu-section {
+  position: relative;
+}
+.menu-section .arrow {
+  position: absolute;
+  width: 160px;
+  height: 170px;
+  top: 0;
+  top: 50px;
+  left: 30px;
+  z-index: -1;
+}
+.food-image {
+  position: absolute;
+  top: 300px;
+  width: 322px;
+  height: 577px;
+  z-index: -10;
+  left: 0;
+}
+.pie-background {
+  position: absolute;
+  right: 0;
+  top: 200px;
+}
+.menu-section .content-side {
+  position: relative;
+}
+.berries {
+  position: absolute;
+  top: -10px;
+  right: 0;
+}
+.menu-section-inner .content-side ul li{
+  display: flex;
+  align-items: center; 
+  gap: 15px;
+}
+.modal-window {
+  position: fixed;
+  inset: 0;
+  display: none;                 
+  justify-content: center;
+  align-items: center;
+  background: rgba(0,0,0,0.5);   
+  z-index: 1000;
+}
+
+.modal-window.active {
+  display: flex;                
+}
+
+.modal-content {
+  padding: 20px;
+  background-color: #46b329;
+  color: white;
+  border-radius: 12px;
+}
+.modal-content h3{font-size: 36px;}
+
+.tabs button{
+      padding: 14px 40px 12px;
+    color: #818181;
+    font-size: 14px;
+    font-weight: 500;
+    background: #e6e6e6;
+        border: 0;
+    border-radius: 30px;
+}
+.tabs{
+  margin-top: 15px;
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+.modal-content .content-side{
+      
+    padding: 25px;
+    color: #212121;
+    background-color: #f3f3f3;
+    overflow: hidden;
+    border-radius: 10px;
 }
